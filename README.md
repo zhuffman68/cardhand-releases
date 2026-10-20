@@ -7,7 +7,9 @@ Organize your trading card collection, identify cards, track prices and optional
 | Platform | Download | Requirements |
 | --- | --- | --- |
 | Android | [Cardhand-Android.apk](https://github.com/zhuffman68/cardhand-releases/releases/download/cardhand-2026-10-20/Cardhand-Android.apk) | Android 8.0 or newer |
-| Linux | [Cardhand-Linux-x86_64.pkg.tar.zst](https://github.com/zhuffman68/cardhand-releases/releases/download/cardhand-2026-10-20/Cardhand-Linux-x86_64.pkg.tar.zst) | Arch Linux or Manjaro, 64-bit x86_64 |
+| Linux — Debian / Ubuntu | [Cardhand-Linux-x86_64.deb](https://github.com/zhuffman68/cardhand-releases/releases/download/cardhand-2026-10-20/Cardhand-Linux-x86_64.deb) | Debian/Ubuntu-based desktop, 64-bit x86_64 |
+| Linux — Fedora / RPM | [Cardhand-Linux-x86_64.rpm](https://github.com/zhuffman68/cardhand-releases/releases/download/cardhand-2026-10-20/Cardhand-Linux-x86_64.rpm) | Fedora-compatible RPM desktop, 64-bit x86_64 |
+| Linux — Arch / Manjaro | [Cardhand-Linux-x86_64.pkg.tar.zst](https://github.com/zhuffman68/cardhand-releases/releases/download/cardhand-2026-10-20/Cardhand-Linux-x86_64.pkg.tar.zst) | Arch Linux or Manjaro, 64-bit x86_64 |
 
 Windows, macOS and iOS releases are planned.
 
@@ -22,6 +24,22 @@ These installers connect to Cardhand's review service. Reviewers should use the 
 3. If Android asks, allow your browser or file manager to install this app, then select **Install**.
 4. Open **Cardhand** from your app list and sign in.
 
+### Debian / Ubuntu
+
+Download **Cardhand-Linux-x86_64.deb**. Open a terminal in the folder containing it and run:
+
+```sh
+sudo apt install ./Cardhand-Linux-x86_64.deb
+```
+
+### Fedora / RPM
+
+Download **Cardhand-Linux-x86_64.rpm**. Open a terminal in the folder containing it and run:
+
+```sh
+sudo dnf install ./Cardhand-Linux-x86_64.rpm
+```
+
 ### Arch Linux / Manjaro
 
 Download **Cardhand-Linux-x86_64.pkg.tar.zst**. Open a terminal in the folder containing it and run:
@@ -30,11 +48,7 @@ Download **Cardhand-Linux-x86_64.pkg.tar.zst**. Open a terminal in the folder co
 sudo pacman -U ./Cardhand-Linux-x86_64.pkg.tar.zst
 ```
 
-Launch **Cardhand** from your application menu, or run:
-
-```sh
-cardhand
-```
+For all Linux packages, launch **Cardhand** from your application menu. The packages include Java; your package manager installs the required system libraries. Use an X11 desktop or a Wayland desktop with XWayland enabled.
 
 ## Getting started
 
